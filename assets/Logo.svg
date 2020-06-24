@@ -1,0 +1,33 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient6076">
+   <stop stop-color="#000000" id="stop6072" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6074" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient6066">
+   <stop stop-color="#000000" id="stop6062" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0" id="stop6064" offset="1"/>
+  </linearGradient>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.78590439,-1.8104792,1.7391243,-0.75493033,25.324401,409.52767)" r="22.573986" fy="109.25574" fx="103.25253" cy="109.25574" cx="103.25253" id="radialGradient6070" xlink:href="#linearGradient6066"/>
+  <linearGradient y2="0.902542" x2="0.368652" y1="0.500001" x1="-0.054406" id="linearGradient6078" xlink:href="#linearGradient6076"/>
+  <linearGradient y2="0.869292" x2="-0.719013" y1="0.500001" x1="-0.083736" id="linearGradient6086" xlink:href="#linearGradient6076"/>
+ </defs>
+ <metadata id="metadata5">image/svg+xml</metadata>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="102" width="102" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" opacity="0.9" id="layer1">
+   <g opacity="0.61" fill="#ffffff" stroke-width="3.401575" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="g4520">
+    <path stroke-width="2" fill="#353564" fill-rule="evenodd" stroke-linejoin="round" d="m2.126442,86.827433l0,-55.163742l48.01672,21.323554l0,45.384218l-48.01672,-11.54403z" id="path4522"/>
+    <path stroke-width="2" fill="#e9e9ff" fill-rule="evenodd" stroke-linejoin="round" d="m50.143162,98.371462l47.7304,-11.362436l0,-53.794194l-47.7304,19.772412l0,45.384218z" id="path4532"/>
+    <path stroke-width="2" fill="#afafde" fill-rule="evenodd" stroke-linejoin="round" d="m2.126442,31.66369l49.163448,-30.035166l46.583672,31.586307l-47.7304,19.772412l-48.01672,-21.323554z" id="path4530"/>
+    <path stroke-width="2" stroke="url(#radialGradient6070)" fill="#f4e900" fill-rule="evenodd" stroke-linejoin="round" fill-opacity="0.621145" opacity="0.8" d="m2.126442,86.827433l49.163448,-17.093523l46.583672,17.275117l-47.7304,11.362436l-48.01672,-11.54403z" id="path4524"/>
+    <path stroke-width="2" stroke="url(#linearGradient6086)" fill="#034eff" fill-rule="evenodd" stroke-linejoin="round" fill-opacity="0.69163" opacity="0.8" d="m51.28989,69.73391l0,-68.105385l46.583672,31.586307l0,53.794194l-46.583672,-17.275117z" id="path4528"/>
+    <path stroke="url(#linearGradient6078)" fill="#07ffd4" fill-rule="evenodd" stroke-linejoin="round" fill-opacity="0.726872" opacity="0.8" stroke-width="2" stroke-miterlimit="4" stroke-linecap="square" d="m2.126442,86.827433l49.163448,-17.093523l0,-68.105385l-49.163448,30.035166l0,55.163742z" id="path4526"/>
+   </g>
+  </g>
+ </g>
+</svg>
