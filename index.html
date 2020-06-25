@@ -1,246 +1,316 @@
   <!DOCTYPE html>
   <html>
-    <head>
-      <meta charset="utf-8">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="icon" type="image/png" href="./assets/logo.svg">
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <style>
-        body {
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Rafał Mucha">
+    <title>Materialize CV</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="icon" type="image/png" href="./assets/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
         background-image: url("./assets/wp.svg");
-         background-size: 100%;
-        }
-        .space {
-          letter-spacing: 1px;
-        }
-        .soc {
-          transform: scale(1.0);
-          transition-duration: 300ms;
-        }
-        .soc:hover {
-          transform: scale(1.1);
-          transition-duration: 300ms;
-        }
-        </style>
-    </head>
+        background-size: 100%;
+      }
 
-    <body class="blue-grey lighten-4">
-      <div class="row">
-        <div class="col s0 m1"></div>
-        <div class="col s12 m5">
-          <div class="card" style="opacity: 0.9">
-            <div class="card-image">
-              <img src="assets/Art.jpg">
-              <span class="card-title">Contact me!</span>
-              <label for="submit-form" tabindex="0" type="submit" class="btn-floating halfway-fab waves-effect waves-light  blue-grey pulse"><i class="material-icons">send</i></label>
-            </div>
-            <div class="card-content">
-              <div class="row">
-                <form class="col s12" id="contact-form" name="contact-form" netlify>
-                  <input type="submit" id="submit-form" style="display: none">
-                  <div class="row">
-                    <div class="input-field col s6 ">
-                      <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" name="name" class="form-control validate" required>
-                      <label for="icon_prefix">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <i class="material-icons prefix">phone</i>
-                      <input id="icon_telephone" type="tel" name="tel" class="form-control validate" required>
-                      <label for="icon_telephone">Telephone</label>
-                    </div>
+      .space {
+        letter-spacing: 1px;
+      }
+
+      .soc {
+        transform: scale(1.0);
+        transition-duration: 300ms;
+      }
+
+      .soc:hover {
+        transform: scale(1.1);
+        transition-duration: 300ms;
+      }
+    </style>
+  </head>
+
+  <body class="blue-grey lighten-4">
+    <div class="row">
+      <div class="col s0 m1"></div>
+      <div class="col s12 m5">
+        <div class="card" style="opacity: 0.9">
+          <div class="card-image">
+            <img src="assets/Art.jpg">
+            <span class="card-title">Contact me!</span>
+            <label for="submit-form" tabindex="0" type="submit"
+              class="btn-floating halfway-fab waves-effect waves-light  blue-grey pulse"><i
+                class="material-icons">send</i></label>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <form class="col s12" id="contact-form" name="contact-form" netlify>
+                <input type="submit" id="submit-form" style="display: none">
+                <div class="row">
+                  <div class="input-field col s6 ">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" name="name" class="form-control validate" required>
+                    <label for="icon_prefix">First Name</label>
                   </div>
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <i class="material-icons prefix">mode_edit</i>
-                      <input id="last_name" type="text" name="surname" class="form-control validate" required>
-                      <label for="last_name">Last Name</label>
-                    </div>
-                      <div class="input-field col s6">
-                        <i class="material-icons prefix">email</i>
-                        <input type="email" id="email" name="email" class="form-control validate" required>
-                        <label for="email">Email</label>
-                      </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" name="tel" class="form-control validate" required>
+                    <label for="icon_telephone">Telephone</label>
                   </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">forum</i>
-                      <textarea id="textarea1" type="text" name="message" class="form-control materialize-textarea"></textarea>
-                      <label for="textarea1">Your message</label>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <input id="last_name" type="text" name="surname" class="form-control validate" required>
+                    <label for="last_name">Last Name</label>
                   </div>
-                </form>
-              </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" name="email" class="form-control validate" required>
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">forum</i>
+                    <textarea id="textarea1" type="text" name="message"
+                      class="form-control materialize-textarea"></textarea>
+                    <label for="textarea1">Your message</label>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <div class="col s12 m5">
-          <div class="card card-panel col s12" style="opacity: 0.9">
-            <div class="row">
-              <div class="col s12 m12">
-                <h2 class="blue-grey-text lighten-4 center-align" style="opacity: 0.5; letter-spacing: 0.5rem;">RAFAŁ MUCHA</h2>
-              </div>
+      </div>
+      <div class="col s12 m5">
+        <div class="card card-panel col s12" style="opacity: 0.9">
+          <div class="row">
+            <div class="col s12 m12">
+              <h2 class="blue-grey-text lighten-4 center-align" style="opacity: 0.5; letter-spacing: 0.5rem;">RAFAŁ
+                MUCHA</h2>
             </div>
-            <div class="row">
-          <ul class="collapsible popout" data-collapsible="accordion">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">local_library</i>My education</div>
-              <div class="collapsible-body"><h5>Master’s Degree in Economics</h5>
-              <p>Jan Kochanowski University in Kielce<br>
-                Economics of industry and services<br>
-              Full time<span class="new badge grey" data-badge-caption="">2012-2014</span></p>
+          </div>
+          <div class="row">
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">local_library</i>My education</div>
+                <div class="collapsible-body">
+                  <h5>Master’s Degree in Economics</h5>
+                  <p>Jan Kochanowski University in Kielce<br>
+                    Economics of industry and services<br>
+                    Full time<span class="new badge grey" data-badge-caption="">2012-2014</span></p>
 
-              <h5>Bachelor’s Degree in Economics</h5>
-              <p>Jan Kochanowski University in Kielce<br>
-                Economics of finance and banking<br>
-              Full time<span class="new badge grey" data-badge-caption="">2009-2012</span></p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">work</i>Dev experience</div>
-              <div class="collapsible-body">
-                <div class="card card-panel col s12" style="opacity: 0.9"><h5>Experienced Software Engineer</h5>
-                <p>GFT Poland <span class="new badge grey" data-badge-caption="">Feb 2020 – now</span></p></div>
-                <p>Web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using:</p>
-                  <ul>
-                <li>HTML, CSS, JavaScript,</li>
-                  <li>React, Vue.js, Bootstrap, jQuery,</li>
-                    <li>Angular, Angular Material,</li>
-                      <li>Node.js, Express, PostgreSQL, Docker,</li>
-                        <li>TypeScript, SASS</li>
-                      </ul>
-                      <p>Designing and implementation of solutions according to customer requirements, documentation of work and mentoring.
-                Building modern Single Page Applications
-                Version control using Git, GitHub, GitLab
-                Working in Scrum methodology</p>
-
-                <div class="card card-panel col s12" style="opacity: 0.9"><h5>Continuous Improvement Specialist & Leader | WebDev</h5>
-                <p>Capgemini <span class="new badge grey" data-badge-caption="">Feb 2019 – Jan 2020</span></p></div>
-                <p><ul>
-                  <li>E2E web development, maintenance and improvements, administration, access control, Front End & Back End maintenance using: HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript
-                  </li><li>Automations & RPA/robotics consultancy
-                  </li><li>Automations (Excel, macros, scripting solutions) design & implementation
-                  </li><li>Business Intelligence Dashboard reporting
-                  </li><li>SharePoint administration and maintenance via SharePoint Designer
-                  </li><li>Support engagements in identifying CI opportunities
-                  </li><li>Driving Continuous Improvement projects to achieve overall objectives of the organization
-                  </li><li>Promoting continuous improvement methodology
-                  </li><li>Generating demand for automation (through different tools and focus workshops)
-                  </li><li>Sharing knowledge and awareness proactively
-                  </li><li>Provide training and knowledge sharing to the business</li>
-                  <ul>
-                    <div class="card card-panel col s12" style="opacity: 0.9"><h5 class="cyan-text">Additionally:</h5>
-                    <p>Web Development basics trainer (conducting trainings for employees on the basics of FrontEnd development - HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints as servers)</p>
+                  <h5>Bachelor’s Degree in Economics</h5>
+                  <p>Jan Kochanowski University in Kielce<br>
+                    Economics of finance and banking<br>
+                    Full time<span class="new badge grey" data-badge-caption="">2009-2012</span></p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">work</i>Dev experience</div>
+                <div class="collapsible-body">
+                  <div class="card card-panel col s12" style="opacity: 0.9">
+                    <h5>Experienced Software Engineer</h5>
+                    <p>GFT Poland <span class="new badge grey" data-badge-caption="">Feb 2020 – now</span></p>
                   </div>
+                  <p>Web development, maintenance and improvements, administration, access control, Front End & Back End
+                    maintenance using:</p>
+                  <ul>
+                    <li>HTML, CSS, JavaScript,</li>
+                    <li>React, Vue.js, Bootstrap, jQuery,</li>
+                    <li>Angular, Angular Material,</li>
+                    <li>Node.js, Express, PostgreSQL, Docker,</li>
+                    <li>TypeScript, SASS</li>
+                  </ul>
+                  <p>Designing and implementation of solutions according to customer requirements, documentation of work
+                    and mentoring.
+                    Building modern Single Page Applications
+                    Version control using Git, GitHub, GitLab
+                    Working in Scrum methodology</p>
+
+                  <div class="card card-panel col s12" style="opacity: 0.9">
+                    <h5>Continuous Improvement Specialist & Leader | WebDev</h5>
+                    <p>Capgemini <span class="new badge grey" data-badge-caption="">Feb 2019 – Jan 2020</span></p>
+                  </div>
+                  <p>
+                    <ul>
+                      <li>E2E web development, maintenance and improvements, administration, access control, Front End &
+                        Back End maintenance using: HTML, CSS, SASS, SVG, Bootstrap, JavaScript, jQuery, ASP.NET, C#,
+                        Chart APIs, MS SQL, MS SharePoints, VBS, VBA, React, TypeScript
+                      </li>
+                      <li>Automations & RPA/robotics consultancy
+                      </li>
+                      <li>Automations (Excel, macros, scripting solutions) design & implementation
+                      </li>
+                      <li>Business Intelligence Dashboard reporting
+                      </li>
+                      <li>SharePoint administration and maintenance via SharePoint Designer
+                      </li>
+                      <li>Support engagements in identifying CI opportunities
+                      </li>
+                      <li>Driving Continuous Improvement projects to achieve overall objectives of the organization
+                      </li>
+                      <li>Promoting continuous improvement methodology
+                      </li>
+                      <li>Generating demand for automation (through different tools and focus workshops)
+                      </li>
+                      <li>Sharing knowledge and awareness proactively
+                      </li>
+                      <li>Provide training and knowledge sharing to the business</li>
+                      <ul>
+                        <div class="card card-panel col s12" style="opacity: 0.9">
+                          <h5 class="cyan-text">Additionally:</h5>
+                          <p>Web Development basics trainer (conducting trainings for employees on the basics of
+                            FrontEnd development - HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap & SharePoints
+                            as servers)</p>
+                        </div>
                   </p>
 
-                  <div class="card card-panel col s12" style="opacity: 0.9"><h5>Command Center Reporting & Analysis Senior Analyst | WebDev</h5>
-                  <p>Capgemini <span class="new badge grey" data-badge-caption="">Jul 2017 – Feb 2019</span></p></div>
-                  <p><ul>
-                    <li>Active website development, maintenance and improvements (HTML, CSS, JavaScript, jQuery, ASP.NET, Bootstrap, Google Charts), administration, access control, Front End & some occasional Back End maintenance
-                    </li><li>Preparation of daily/monthly reports in MS Excel
-                    </li><li>Preparation of monthly dashboards in SAP BusinessObjects & MS PowerBI
-                    </li><li>Preparation of monthly service review PPT decks
-                    </li><li>General IT support for Citrix, Cisco telephony, VPN, Office Suite software, ERPs, server issues, ticketing on Service NOW, BMC Remedy and various ITSM systems
-                    </li><li>Calculation of process metrics data based on agreed definitions
-                    </li><li>Data collection plan control
-                    </li><li>SharePoint administration and maintenance via SharePoint Designer
-                    </li><li>Coordination with engagement team in getting data
-                    </li><li>Updating required process documentation (procedures) and other documentation within agreed timeframes
-                    </li><li>Creation of project plans, implementation of interfaces for data input and data output
-                    </li><li>Coordination of MS SQL database structure creation, integration of data and information
-                    </li><li>Enhancements of service reporting tool sets</li>
+                  <div class="card card-panel col s12" style="opacity: 0.9">
+                    <h5>Command Center Reporting & Analysis Senior Analyst | WebDev</h5>
+                    <p>Capgemini <span class="new badge grey" data-badge-caption="">Jul 2017 – Feb 2019</span></p>
+                  </div>
+                  <p>
                     <ul>
-                      <div class="card card-panel col s12" style="opacity: 0.9"><h5 class="cyan-text">Additionally:</h5>
-                      <p>Risk & Compliance Coordinator (auditing, creation, preparation and updates of a BCP, R&C logs, operational and Disaster Recovery-related documentation)</p>
-                    </div>
-                    </p>
+                      <li>Active website development, maintenance and improvements (HTML, CSS, JavaScript, jQuery,
+                        ASP.NET, Bootstrap, Google Charts), administration, access control, Front End & some occasional
+                        Back End maintenance
+                      </li>
+                      <li>Preparation of daily/monthly reports in MS Excel
+                      </li>
+                      <li>Preparation of monthly dashboards in SAP BusinessObjects & MS PowerBI
+                      </li>
+                      <li>Preparation of monthly service review PPT decks
+                      </li>
+                      <li>General IT support for Citrix, Cisco telephony, VPN, Office Suite software, ERPs, server
+                        issues, ticketing on Service NOW, BMC Remedy and various ITSM systems
+                      </li>
+                      <li>Calculation of process metrics data based on agreed definitions
+                      </li>
+                      <li>Data collection plan control
+                      </li>
+                      <li>SharePoint administration and maintenance via SharePoint Designer
+                      </li>
+                      <li>Coordination with engagement team in getting data
+                      </li>
+                      <li>Updating required process documentation (procedures) and other documentation within agreed
+                        timeframes
+                      </li>
+                      <li>Creation of project plans, implementation of interfaces for data input and data output
+                      </li>
+                      <li>Coordination of MS SQL database structure creation, integration of data and information
+                      </li>
+                      <li>Enhancements of service reporting tool sets</li>
+                      <ul>
+                        <div class="card card-panel col s12" style="opacity: 0.9">
+                          <h5 class="cyan-text">Additionally:</h5>
+                          <p>Risk & Compliance Coordinator (auditing, creation, preparation and updates of a BCP, R&C
+                            logs, operational and Disaster Recovery-related documentation)</p>
+                        </div>
+                  </p>
 
-                    <div class="card card-panel col s12" style="opacity: 0.9"><h5>Manager | Web-based business owner</h5>
-                <p>AIP Foundation <span class="new badge grey" data-badge-caption="">Apr 2011 – Oct 2012</span></p></div>
-                <p>Management of a start-up business, invoicing, contacting clients, sales of advertising space, website administration (HTML, phpBB). Employed and managed the work of up to 15 contractors.</p>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">record_voice_over</i>Languages I speak</div>
-              <div class="collapsible-body">
-                <ul class="collection">
-                  <li class="collection-item">Polish: <div class="progress">
-                    <div class="determinate" style="width: 100%"></div>
-                </div></li>
-                  <li class="collection-item">English: <div class="progress">
-                    <div class="determinate" style="width: 90%"></div>
-                </div></li>
-                  <li class="collection-item">German: <div class="progress">
-                    <div class="determinate" style="width: 30%"></div>
-                </div></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                  <div class="card card-panel col s12" style="opacity: 0.9">
+                    <h5>Manager | Web-based business owner</h5>
+                    <p>AIP Foundation <span class="new badge grey" data-badge-caption="">Apr 2011 – Oct 2012</span></p>
+                  </div>
+                  <p>Management of a start-up business, invoicing, contacting clients, sales of advertising space,
+                    website administration (HTML, phpBB). Employed and managed the work of up to 15 contractors.</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">record_voice_over</i>Languages I speak</div>
+                <div class="collapsible-body">
+                  <ul class="collection">
+                    <li class="collection-item">Polish: <div class="progress">
+                        <div class="determinate" style="width: 100%"></div>
+                      </div>
+                    </li>
+                    <li class="collection-item">English: <div class="progress">
+                        <div class="determinate" style="width: 90%"></div>
+                      </div>
+                    </li>
+                    <li class="collection-item">German: <div class="progress">
+                        <div class="determinate" style="width: 30%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="card-image">
+              <img src="./assets/cv.svg" style="opacity: 0.5" />
+            </div>
+          </div>
         </div>
-        <div class="row">
-        <div class="card-image">
-          <img src="./assets/cv.svg" style="opacity: 0.5"/>
-        </div>
-      </div>
-      </div>
       </div>
       <div class="col s0 m1"></div>
-      </div>
-
-      <div class="fixed-action-btn" style="opacity: 0.9">
-    <a id="menu" class="btn-floating btn-large blue-grey darken-2 waves-effect waves-light" href="https://rafal-mucha.pl/" target="_blank">
-      <i class="large material-icons">assignment_ind</i>
-    </a>
-  <!-- Tap Target Structure -->
-  <div class="tap-target blue-grey darken-1" data-activates="menu">
-    <div class="tap-target-content white-text text-darken-2">
-      <h5>CV link</h5>
-      <p>This button will take you to my CV website, where you'll find downloads & more info about me.</p>
     </div>
-  </div>
-  </div>
 
-  <footer class="page-footer blue-grey">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About me</h5>
-          <p class="grey-text text-lighten-4">Economics master's degree graduate, working in the corporate IT sector. People focused, eager to learn new skills, proactive and keen on new challanges. Experienced in customer service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev, mobile and automations.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          
-          <ul>
-            <li class="soc"><a class="grey-text text-lighten-3 space" href="https://github.com/RavMucha" target="_blank"><img style="border-radius: 50%;" src="assets/ig.svg" width="15px"> GitHub</a></li>
-            <li class="soc"><a class="grey-text text-lighten-3 space" href="https://www.linkedin.com/in/rafa%C5%82-mucha-5b4a84110" target="_blank"><img style="border-radius: 50%;"  src="assets/il.svg" width="15px"> LinkedIn</a></li>
-            <li class="soc"><a class="grey-text text-lighten-3 space" href="https://www.facebook.com/profile.php?id=100000481935978" target="_blank"><img style="border-radius: 50%;" src="assets/if.svg" width="15px"> Facebook</a></li>
-            <li class="soc"><a class="grey-text text-lighten-3 space" href="https://twitter.com/rafal_mucha" target="_blank"><img style="border-radius: 50%;" src="assets/it.svg" width="15px"> Twitter</a></li>
-            <li class="soc"><a class="grey-text text-lighten-3 space" href="https://www.sololearn.com/Profile/489871" target="_blank"><img src="assets/is.svg" width="15px"> SoloLearn</a></li>
-          </ul>
+    <div class="fixed-action-btn" style="opacity: 0.9">
+      <a id="menu" class="btn-floating btn-large blue-grey darken-2 waves-effect waves-light"
+        href="https://rafal-mucha.pl/" target="_blank">
+        <i class="large material-icons">assignment_ind</i>
+      </a>
+      <!-- Tap Target Structure -->
+      <div class="tap-target blue-grey darken-1" data-activates="menu">
+        <div class="tap-target-content white-text text-darken-2">
+          <h5>CV link</h5>
+          <p>This button will take you to my CV website, where you'll find downloads & more info about me.</p>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+
+    <footer class="page-footer blue-grey">
       <div class="container">
-      © 2020 Copyright Rafał Mucha
-      <a class="grey-text text-lighten-4 right" href="https://materializecss.com/" target="_blank">Made with MaterializeCSS</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About me</h5>
+            <p class="grey-text text-lighten-4">Economics master's degree graduate, working in the corporate IT sector.
+              People focused, eager to learn new skills, proactive and keen on new challanges. Experienced in customer
+              service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev,
+              mobile and automations.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+
+            <ul>
+              <li class="soc"><a class="grey-text text-lighten-3 space" href="https://github.com/RavMucha"
+                  target="_blank"><img style="border-radius: 50%;" src="assets/ig.svg" width="15px"> GitHub</a></li>
+              <li class="soc"><a class="grey-text text-lighten-3 space"
+                  href="https://www.linkedin.com/in/rafa%C5%82-mucha-5b4a84110" target="_blank"><img
+                    style="border-radius: 50%;" src="assets/il.svg" width="15px"> LinkedIn</a></li>
+              <li class="soc"><a class="grey-text text-lighten-3 space"
+                  href="https://www.facebook.com/profile.php?id=100000481935978" target="_blank"><img
+                    style="border-radius: 50%;" src="assets/if.svg" width="15px"> Facebook</a></li>
+              <li class="soc"><a class="grey-text text-lighten-3 space" href="https://twitter.com/rafal_mucha"
+                  target="_blank"><img style="border-radius: 50%;" src="assets/it.svg" width="15px"> Twitter</a></li>
+              <li class="soc"><a class="grey-text text-lighten-3 space" href="https://www.sololearn.com/Profile/489871"
+                  target="_blank"><img src="assets/is.svg" width="15px"> SoloLearn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-         $(document).ready(function(){
-          $('.tap-target').tapTarget('open');
-          setTimeout(function(){ $('.tap-target').tapTarget('close'); }, 3000);
-    });
-      </script>
-    </body>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Rafał Mucha
+          <a class="grey-text text-lighten-4 right" href="https://materializecss.com/" target="_blank">Made with
+            MaterializeCSS</a>
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.tap-target').tapTarget('open');
+        setTimeout(function () {
+          $('.tap-target').tapTarget('close');
+        }, 3000);
+      });
+    </script>
+  </body>
   </html>
