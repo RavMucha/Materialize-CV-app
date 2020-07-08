@@ -1,5 +1,6 @@
   <!DOCTYPE html>
   <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Rafał Mucha">
@@ -28,31 +29,42 @@
         transform: scale(1.1);
         transition-duration: 300ms;
       }
+
       #Fork {
-        position:fixed;
-        top:0;
-        left:0;
+        position: fixed;
+        top: 0;
+        left: 0;
         z-index: 5;
         opacity: 0.9;
       }
+
       .con-tit {
         font-variant: small-caps;
-        text-shadow: 1px 0 1px rgba(0,0,0,0.87);
+        text-shadow: 1px 0 1px rgba(0, 0, 0, 0.87);
       }
+
       .FMlogo {
         color: #ee6e73;
         font-weight: 300;
         text-shadow: 0 0 1px #485e68;
-        font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,"Helvetica Neue", sans-serif;
+        font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
+
+      @media only screen and (max-width: 420px) {
+        .right {
+          float: left !important;
+        }
       }
     </style>
   </head>
 
   <body class="blue-grey lighten-4">
-    <a href="https://github.com/RavMucha/Materialize-CV-app" target="_blank"><img id="Fork" width="100px" height="100px" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <a href="https://github.com/RavMucha/Materialize-CV-app" target="_blank"><img id="Fork" width="100px" height="100px"
+        src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149"
+        class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     <div class="row">
-      <div class="col s0 m1"></div>
-      <div class="col s12 m5">
+      <div class="col s0 m0 l1"></div>
+      <div class="col s12 m5 l5">
         <div class="card" style="opacity: 0.9">
           <div class="card-image">
             <img src="assets/Art.jpg">
@@ -66,24 +78,24 @@
               <form class="col s12" id="contact-form" name="contact-form" netlify>
                 <input type="submit" id="submit-form" style="display: none">
                 <div class="row">
-                  <div class="input-field col s6 ">
+                  <div class="input-field col s6 m12 l6">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="icon_prefix" type="text" name="name" class="form-control validate" required>
                     <label for="icon_prefix">Name</label>
                   </div>
-                  <div class="input-field col s6">
+                  <div class="input-field col s6 m12 l6">
                     <i class="material-icons prefix">phone</i>
                     <input id="icon_telephone" type="tel" name="tel" class="form-control validate" required>
                     <label for="icon_telephone">Telephone</label>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="input-field col s6">
+                  <div class="input-field col s6 m12 l6">
                     <i class="material-icons prefix">mode_edit</i>
                     <input id="last_name" type="text" name="surname" class="form-control validate" required>
                     <label for="last_name">Surname</label>
                   </div>
-                  <div class="input-field col s6">
+                  <div class="input-field col s6 m12 l6">
                     <i class="material-icons prefix">email</i>
                     <input type="email" id="email" name="email" class="form-control validate" required>
                     <label for="email">Email</label>
@@ -102,7 +114,7 @@
           </div>
         </div>
       </div>
-      <div class="col s12 m5">
+      <div class="col s12 m6 l5">
         <div class="card card-panel col s12" style="opacity: 0.9">
           <div class="row">
             <div class="col s12 m12">
@@ -256,6 +268,21 @@
                   </ul>
                 </div>
               </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_hdr</i>Hobbies</div>
+              <div class="collapsible-body">
+                <ul class="collection">
+                    <li class="collection-item"> Electronics: VR, AR, AI, smart home...</li>
+                    <li class="collection-item"> Sports: gym, dancing, mountain walking</li>
+                    <li class="collection-item"> Music, mostly instrumental &amp; classical</li>
+                    <li class="collection-item"> Music equipment: headphones &amp; speakers</li>
+                    <li class="collection-item"> Learning languages: currently German</li>
+                    <li class="collection-item"> Coding: FrontEnd frameworks, libraries &amp; APIs</li>
+                    <li class="collection-item"> Card games: Magic: The Gathering &amp; Poker</li>
+                    <li class="collection-item"> Personal development & finance literature</li>
+                </ul>
+              </div>
+            </li>
             </ul>
           </div>
           <div class="row">
@@ -265,7 +292,7 @@
           </div>
         </div>
       </div>
-      <div class="col s0 m1"></div>
+      <div class="col s0 m0 l1"></div>
     </div>
 
     <div class="fixed-action-btn" style="opacity: 0.9">
@@ -315,7 +342,8 @@
       <div class="footer-copyright">
         <div class="container">
           © 2020 Copyright Rafał Mucha
-          <a class="grey-text text-lighten-4 right" href="https://materializecss.com/" target="_blank">Made with <span class="FMlogo">&#10084;</span> and <span class="FMlogo">Materialize</span></a>
+          <a class="grey-text text-lighten-4 right" href="https://materializecss.com/" target="_blank">Made with <span
+              class="FMlogo">&#10084;</span> and <span class="FMlogo">Materialize</span></a>
         </div>
       </div>
     </footer>
@@ -327,8 +355,9 @@
         $('.tap-target').tapTarget('open');
         setTimeout(function () {
           $('.tap-target').tapTarget('close');
-        }, 5000);
+        }, 3500);
       });
     </script>
   </body>
+
   </html>
