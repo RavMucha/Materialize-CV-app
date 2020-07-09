@@ -50,6 +50,24 @@
         font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       }
 
+      .avp li {
+        font-size: 0.95em;
+        word-spacing: 3px;
+      }
+
+      .avp li::before {
+        content: '∴  ';
+        color: #aa0000;
+      }
+
+      .avp li:hover {
+        color: #23a49c;
+      }
+
+      .collapsible-body {
+        user-select: none;
+      }
+
       @media only screen and (max-width: 420px) {
         .right {
           float: left !important;
@@ -143,11 +161,12 @@
                 <div class="collapsible-body">
                   <div class="card card-panel col s12" style="opacity: 0.9">
                     <h5>Experienced Software Engineer</h5>
-                    <p><a href="https://www.gft.com/pl/pl/index/" target="_blank">GFT Poland</a> <span class="new badge grey" data-badge-caption="">Feb 2020 – now</span></p>
+                    <p><a href="https://www.gft.com/pl/pl/index/" target="_blank">GFT Poland</a> <span
+                        class="new badge grey" data-badge-caption="">Feb 2020 – now</span></p>
                   </div>
                   <p>Web development, maintenance and improvements, administration, access control, Front End & Back End
                     maintenance using:</p>
-                  <ul>
+                  <ul class="avp">
                     <li>HTML, CSS, JavaScript,</li>
                     <li>React, Vue.js, Bootstrap, jQuery,</li>
                     <li>Angular, Angular Material,</li>
@@ -162,7 +181,8 @@
 
                   <div class="card card-panel col s12" style="opacity: 0.9">
                     <h5>Continuous Improvement Specialist & Leader | WebDev</h5>
-                    <p><a href="https://www.capgemini.com/pl-pl/" target="_blank">Capgemini</a> <span class="new badge grey" data-badge-caption="">Feb 2019 – Jan 2020</span></p>
+                    <p><a href="https://www.capgemini.com/pl-pl/" target="_blank">Capgemini</a> <span
+                        class="new badge grey" data-badge-caption="">Feb 2019 – Jan 2020</span></p>
                   </div>
                   <p>
                     <ul>
@@ -200,7 +220,8 @@
 
                   <div class="card card-panel col s12" style="opacity: 0.9">
                     <h5>Command Center Reporting & Analysis Senior Analyst | WebDev</h5>
-                    <p><a href="https://www.capgemini.com/pl-pl/" target="_blank">Capgemini</a> <span class="new badge grey" data-badge-caption="">Jul 2017 – Feb 2019</span></p>
+                    <p><a href="https://www.capgemini.com/pl-pl/" target="_blank">Capgemini</a> <span
+                        class="new badge grey" data-badge-caption="">Jul 2017 – Feb 2019</span></p>
                   </div>
                   <p>
                     <ul>
@@ -243,7 +264,8 @@
 
                   <div class="card card-panel col s12" style="opacity: 0.9">
                     <h5>Manager | Web-based business owner</h5>
-                    <p><a href="https://aip.link/" target="_blank">AIP Foundation</a> <span class="new badge grey" data-badge-caption="">Apr 2011 – Oct 2012</span></p>
+                    <p><a href="https://aip.link/" target="_blank">AIP Foundation</a> <span class="new badge grey"
+                        data-badge-caption="">Apr 2011 – Oct 2012</span></p>
                   </div>
                   <p>Management of a start-up business, invoicing, contacting clients, sales of advertising space,
                     website administration (HTML, phpBB). Employed and managed the work of up to 15 contractors.</p>
@@ -268,10 +290,10 @@
                   </ul>
                 </div>
               </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_hdr</i>Hobbies</div>
-              <div class="collapsible-body">
-                <ul class="collection">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_hdr</i>Hobbies</div>
+                <div class="collapsible-body">
+                  <ul class="collection hobby avp">
                     <li class="collection-item"> Electronics: VR, AR, AI, smart home...</li>
                     <li class="collection-item"> Sports: gym, dancing, mountain walking</li>
                     <li class="collection-item"> Music, mostly instrumental &amp; classical</li>
@@ -280,9 +302,9 @@
                     <li class="collection-item"> Coding: FrontEnd frameworks, libraries &amp; APIs</li>
                     <li class="collection-item"> Card games: Magic: The Gathering &amp; Poker</li>
                     <li class="collection-item"> Personal development & finance literature</li>
-                </ul>
-              </div>
-            </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="row">
