@@ -278,7 +278,7 @@
       <!-- Tap Target Structure -->
       <div class="tap-target blue-grey darken-1" data-activates="menu">
         <div class="tap-target-content white-text text-darken-2">
-          <h5>CV link</h5>
+          <h4>CV link</h4>
           <p>This button will take you to my CV website, where you'll find downloads & more info about me.</p>
         </div>
       </div>
@@ -330,18 +330,18 @@
         $('.tap-target').tapTarget('open');
         setTimeout(function () {
           $('.tap-target').tapTarget('close');
-        }, 3500);
+        }, 4000);
 
         $('.collapsible').collapsible({
           onClose: function (el) {
-            $('#upArr').fadeOut(500);
+            $('#upArr').fadeOut(400);
             $('.cont2').removeClass("m5").addClass("m6");
             $('.cont3').removeClass("m7").addClass("m6");
           }
 
         });
         $('.showUp').click(function () {
-          $('#upArr').fadeIn(500);
+          $('#upArr').fadeIn(400);
           $('.cont2').removeClass("m6").addClass("m5");
           $('.cont3').removeClass("m6").addClass("m7");
         });
