@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url("../assets/wp.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .space {
+    letter-spacing: 1px;
+  }
+
+  .soc {
+    transform: scale(1.0);
+    transition-duration: 300ms;
+  }
+
+  .soc:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+  }
+
+  #Fork {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0.9;
+  }
+
+  .con-tit {
+    font-variant: small-caps;
+    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.87);
+  }
+
+  .FMlogo {
+    color: #ee6e73;
+    font-weight: 300;
+    text-shadow: 0 0 1px #485e68;
+    font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+
+  .FMlogo:hover {
+    color: #ee464c;
+    text-shadow: 0 0 2px #ee6e73;
+  }
+
+  #upArr {
+    opacity: 0.9;
+    bottom: 74px;
+    display: none;
+  }
+
+  .avp li {
+    font-size: 0.95em;
+    word-spacing: 3px;
+  }
+
+  .avp li::before {
+    content: '♦  ';
+    color: #485e68;
+  }
+
+  .avp li:hover {
+    color: #485e68;
+    font-weight: 300;
+  }
+
+  .collapsible-body {
+    user-select: none;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .right {
+      float: left !important;
+    }
+  }
