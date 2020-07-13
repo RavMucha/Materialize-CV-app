@@ -91,8 +91,8 @@
                     Full time<span class="new badge grey" data-badge-caption="">2009-2012</span></p>
                 </div>
               </li>
-              <li class="showUp">
-                <div class="collapsible-header showUp"><i class="material-icons">work</i>Dev experience</div>
+              <li>
+                <div class="collapsible-header" id="showUp"><i class="material-icons">work</i>Dev experience</div>
                 <div class="collapsible-body">
                   <div class="card card-panel col s12" style="opacity: 0.9">
                     <h5>Experienced Software Engineer</h5>
@@ -325,28 +325,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.tap-target').tapTarget('open');
-        setTimeout(function () {
-          $('.tap-target').tapTarget('close');
-        }, 4000);
-
-        $('.collapsible').collapsible({
-          onClose: function (el) {
-            $('#upArr').fadeOut(400);
-            $('.cont2').removeClass("m5").addClass("m6");
-            $('.cont3').removeClass("m7").addClass("m6");
-          }
-
-        });
-        $('.showUp').click(function () {
-          $('#upArr').fadeIn(400);
-          $('.cont2').removeClass("m6").addClass("m5");
-          $('.cont3').removeClass("m6").addClass("m7");
-        });
-      });
-    </script>
+    <script type="text/javascript" src="js/my.js"></script>
   </body>
 
   </html>
