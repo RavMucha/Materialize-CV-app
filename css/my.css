@@ -68,7 +68,7 @@ html {
     font-weight: 300;
   }
 
-  .collapsible-body, .not-txt {
+  .collapsible-body, .not-txt, .collapsible-header, footer {
     user-select: none;
   }
   
