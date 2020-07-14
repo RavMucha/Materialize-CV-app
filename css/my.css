@@ -1,129 +1,169 @@
 html {
-    scroll-behavior: smooth;
-    filter: saturate(120%);
-  }
+  scroll-behavior: smooth;
+  filter: saturate(120%);
+}
 
-  body {
-    background-image: url("../assets/wp.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+body {
+  background-image: url("../assets/wp.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  .space {
-    letter-spacing: 1px;
-  }
+.space {
+  letter-spacing: 1px;
+}
 
-  .soc {
-    transform: scale(1.0);
-    transition-duration: 300ms;
-  }
+.soc {
+  transform: scale(1);
+  transition-duration: 300ms;
+}
 
-  .soc:hover {
-    transform: scale(1.1);
-    transition-duration: 300ms;
-  }
+.soc:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
 
-  #Fork {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    opacity: 0.9;
-  }
+#Fork {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0.9;
+}
 
-  .con-tit {
-    font-variant: small-caps;
-    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.87);
-  }
+.con-tit {
+  font-variant: small-caps;
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.87);
+}
 
-  .FMlogo {
-    color: #ee6e73;
-    font-weight: 300;
-    text-shadow: 0 0 1px #485e68;
-    font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  }
+.FMlogo {
+  color: #ee6e73;
+  font-weight: 300;
+  text-shadow: 0 0 1px #485e68;
+  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+}
 
-  .FMlogo:hover {
-    color: #ee464c;
-    text-shadow: 0 0 2px #ee6e73;
-  }
+.FMlogo:hover {
+  color: #ee464c;
+  text-shadow: 0 0 2px #ee6e73;
+}
 
-  #upArr {
-    opacity: 0.9;
-    bottom: 74px;
-    display: none;
-  }
+#upArr {
+  opacity: 0.9;
+  bottom: 74px;
+  display: none;
+}
 
-  .avp li {
-    font-size: 0.95em;
-    word-spacing: 3px;
-  }
+.avp li {
+  font-size: 0.95em;
+  word-spacing: 3px;
+}
 
-  .avp li::before {
-    content: '♦  ';
-    color: #485e68;
-  }
+.avp li::before {
+  content: "♦  ";
+  color: #485e68;
+}
 
-  .avp li:hover {
-    color: #485e68;
-    font-weight: 300;
-  }
+.avp li:hover {
+  color: #485e68;
+  font-weight: 300;
+}
 
-  .collapsible-body, .not-txt, .collapsible-header, footer {
-    user-select: none;
-  }
-  
-  .cus-bdg {
-    font-weight: 500;
-    font-size: small;
-    color: #485e68;
-  }
+.collapsible-body,
+.not-txt,
+.collapsible-header,
+footer {
+  user-select: none;
+}
 
-  @media only screen and (max-width: 420px) {
-    .right {
-      float: left!important;
-    }
-    #toasty-button {
-      float: left;
-      margin-right: 10px;
-    }
-  }
+.cus-bdg {
+  font-weight: 500;
+  font-size: small;
+  color: #485e68;
+}
 
-  .show-dan{
-    -webkit-animation:showToastyGuy 1s;
-       -moz-animation:showToastyGuy 1s;
-         -o-animation:showToastyGuy 1s;
-            animation:showToastyGuy 1s;
+@media only screen and (max-width: 420px) {
+  .right {
+    float: left !important;
   }
-  
-  @-webkit-keyframes showToastyGuy 
-  {
-    0% {right: -300px;}
-    40% {right: 0;}
-    60% {right: 0;}
-    100% {right: -300px;}
+  #toasty-button {
+    float: left;
+    margin-right: 10px;
   }
-  
-  @-moz-keyframes showToastyGuy 
-  {
-    0% {right: -300px;}
-    40% {right: 0;}
-    60% {right: 0;}
-    100% {right: -300px;}
+}
+
+#Fatal {
+  position: fixed;
+  top: 10vh;
+  left: calc(50vw - 250px);
+  display: none;
+  z-index: 99;
+}
+
+.show-dan {
+  -webkit-animation: showToastyGuy 1s;
+  -moz-animation: showToastyGuy 1s;
+  -o-animation: showToastyGuy 1s;
+  animation: showToastyGuy 1s;
+}
+
+@-webkit-keyframes showToastyGuy {
+  0% {
+    right: -300px;
   }
-  
-  @-o-keyframes showToastyGuy 
-  {
-    0% {right: -300px;}
-    40% {right: 0;}
-    60% {right: 0;}
-    100% {right: -300px;}
+  40% {
+    right: 0;
   }
-  
-  @keyframes showToastyGuy 
-  {
-    0% {right: -300px;}
-    40% {right: 0;}
-    60% {right: 0;}
-    100% {right: -300px;}
+  60% {
+    right: 0;
   }
+  100% {
+    right: -300px;
+  }
+}
+
+@-moz-keyframes showToastyGuy {
+  0% {
+    right: -300px;
+  }
+  40% {
+    right: 0;
+  }
+  60% {
+    right: 0;
+  }
+  100% {
+    right: -300px;
+  }
+}
+
+@-o-keyframes showToastyGuy {
+  0% {
+    right: -300px;
+  }
+  40% {
+    right: 0;
+  }
+  60% {
+    right: 0;
+  }
+  100% {
+    right: -300px;
+  }
+}
+
+@keyframes showToastyGuy {
+  0% {
+    right: -300px;
+  }
+  40% {
+    right: 0;
+  }
+  60% {
+    right: 0;
+  }
+  100% {
+    right: -300px;
+  }
+}

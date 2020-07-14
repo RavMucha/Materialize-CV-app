@@ -13,10 +13,11 @@
   </head>
 
   <body class="blue-grey lighten-4">
+    <img src="./assets/Fatal.gif" id="Fatal" alt="Fatality">
     <a href="https://github.com/RavMucha/Materialize-CV-app" target="_blank"><img id="Fork" width="100px" height="100px"
         src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149"
         class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    <div class="row">
+    <div class="row Fatality">
       <div class="col s12 m6 l5 offset-l1 cont2">
         <div class="card" style="opacity: 0.9">
           <div class="card-image">
@@ -296,11 +297,11 @@
       </div>
     </div>
 
-    <footer class="page-footer blue-grey">
+    <footer class="page-footer blue-grey Fatality">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text hueRotate">About me</h5>
+            <h5 class="white-text hueRotate" onclick="playFatal('./assets/Fatal.mp3')">About me</h5>
             <p class="grey-text text-lighten-4">Economics master's degree graduate, working in the corporate IT sector.
               People focused, eager to learn new skills, proactive and keen on new challanges. Experienced in customer
               service, accounting, reporting, general IT and an self-trained programmer, focused on FrontEnd WebDev,
@@ -347,7 +348,6 @@
         $("#toasty-button").click(function () {
           $("body").toasty('pop');
         });
-
       });
     </script>
   </body>

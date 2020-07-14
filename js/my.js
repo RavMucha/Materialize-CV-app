@@ -21,12 +21,22 @@ $(document).ready(function () {
     },
   });
   function Hue() {
-    $("footer").css({ filter: "hue-rotate(180deg)" });
+    $(".Fatality").css({ filter: "hue-rotate(180deg)" });
   }
   $(".hueRotate").click(function () {
     Hue();
     setTimeout(function () {
-      $("footer").css({ filter: "hue-rotate(0deg)" });
+      $(".Fatality").css({ filter: "hue-rotate(0deg)" });
     }, 2000);
   });
 });
+
+function playFatal(url) {
+  var sound = new Audio(url);
+  sound.play();
+  sound.volume = 0.3;
+  $("#Fatal").toggle(150);
+  setTimeout(function () {
+    $("#Fatal").toggle(150);
+  }, 2000);
+}
