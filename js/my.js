@@ -21,12 +21,12 @@ $(document).ready(function () {
     },
   });
   function Hue() {
-    $("html").css({ filter: "hue-rotate(180deg)" });
+    $("footer").css({ filter: "hue-rotate(180deg)" });
   }
   $(".hueRotate").click(function () {
     Hue();
     setTimeout(function () {
-      $("html").css({ filter: "hue-rotate(0deg)" });
+      $("footer").css({ filter: "hue-rotate(0deg)" });
     }, 2000);
   });
 });
