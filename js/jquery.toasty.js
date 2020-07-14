@@ -19,7 +19,7 @@
  		pop: function(){
  			var audio = document.getElementById('toasty-audio');
 			audio.play();
-			audio.volume = 0.3;
+			audio.volume = 0.2;
 			$("#toasty-guy-dan").addClass("show-dan");
 			setTimeout( function(){ $("#toasty-guy-dan").removeClass("show-dan"); }, 1000);
  		}
