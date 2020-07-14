@@ -80,6 +80,49 @@ html {
 
   @media only screen and (max-width: 420px) {
     .right {
-      float: left !important;
+      float: left!important;
     }
+    #toasty-button {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  .show-dan{
+    -webkit-animation:showToastyGuy 1s;
+       -moz-animation:showToastyGuy 1s;
+         -o-animation:showToastyGuy 1s;
+            animation:showToastyGuy 1s;
+  }
+  
+  @-webkit-keyframes showToastyGuy 
+  {
+    0% {right: -300px;}
+    40% {right: 0;}
+    60% {right: 0;}
+    100% {right: -300px;}
+  }
+  
+  @-moz-keyframes showToastyGuy 
+  {
+    0% {right: -300px;}
+    40% {right: 0;}
+    60% {right: 0;}
+    100% {right: -300px;}
+  }
+  
+  @-o-keyframes showToastyGuy 
+  {
+    0% {right: -300px;}
+    40% {right: 0;}
+    60% {right: 0;}
+    100% {right: -300px;}
+  }
+  
+  @keyframes showToastyGuy 
+  {
+    0% {right: -300px;}
+    40% {right: 0;}
+    60% {right: 0;}
+    100% {right: -300px;}
   }
