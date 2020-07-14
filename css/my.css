@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    filter: saturate(120%);
   }
 
   body {
