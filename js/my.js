@@ -32,11 +32,12 @@ $(document).ready(function () {
 
   $("body").toasty();
 });
+var soundF = new Audio("./assets/Fatal.mp3");
+var soundT = new Audio("./assets/Toasty.mp3");
 
 function playFatal() {
-  var sound = new Audio('./assets/Fatal.mp3');
-  sound.play();
-  sound.volume = 0.3;
+  soundF.play();
+  soundF.volume = 0.3;
   $("#Fatal").toggle(150);
   document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
   setTimeout(function () {
@@ -46,9 +47,8 @@ function playFatal() {
 }
 
 function playToasty() {
-  var sound = new Audio('./assets/Toasty.mp3');
-  sound.play();
-  sound.volume = 0.3;
+  soundT.play();
+  soundT.volume = 0.3;
   $("#toastyMe").addClass("surprise");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
