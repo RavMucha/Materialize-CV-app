@@ -33,8 +33,8 @@ $(document).ready(function () {
   $("body").toasty();
 });
 
-function playFatal(url) {
-  var sound = new Audio(url);
+function playFatal() {
+  var sound = new Audio('./assets/Fatal.mp3');
   sound.play();
   sound.volume = 0.3;
   $("#Fatal").toggle(150);
@@ -45,8 +45,8 @@ function playFatal(url) {
   }, 2000);
 }
 
-function playToasty(url) {
-  var sound = new Audio(url);
+function playToasty() {
+  var sound = new Audio('./assets/Toasty.mp3');
   sound.play();
   sound.volume = 0.3;
   $("#toastyMe").addClass("surprise");
@@ -54,10 +54,12 @@ function playToasty(url) {
     $("#toastyMe").removeClass("surprise");
   }, 1000);
 }
-  function Toasty() {
-      $("body").append('<div id="toastyMe"><img src="./assets/toasty.png" alt="toasty"></div>');
-      $("#toastyMe").css({"position": "fixed", "right": "-200px", "bottom": "-10px"});
-  };
-  $.fn.toasty = function () {
-    new Toasty();
-  };
+function Toasty() {
+  $("body").append(
+    '<div id="toastyMe"><img src="./assets/toasty.png" alt="toasty"></div>'
+  );
+  $("#toastyMe").css({ position: "fixed", right: "-200px", bottom: "-10px" });
+}
+$.fn.toasty = function () {
+  new Toasty();
+};
