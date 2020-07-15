@@ -20,16 +20,6 @@ $(document).ready(function () {
       }
     },
   });
-  function Hue() {
-    $(".Fatality").css({ filter: "hue-rotate(180deg)" });
-  }
-  $(".hueRotate").click(function () {
-    Hue();
-    setTimeout(function () {
-      $(".Fatality").css({ filter: "hue-rotate(0deg)" });
-    }, 2000);
-  });
-
   $("body").toasty();
 });
 var soundF = new Audio("./assets/Fatal.mp3");
@@ -39,9 +29,11 @@ function playFatal() {
   soundF.play();
   soundF.volume = 0.3;
   $("#Fatal").toggle(150);
+  $(".Fatality").css({ filter: "hue-rotate(180deg)" });
   document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
   setTimeout(function () {
     $("#Fatal").toggle(150);
+    $(".Fatality").css({ filter: "hue-rotate(0deg)" });
     document.body.style.backgroundImage = "url('./assets/wp.svg')";
   }, 2000);
 }
