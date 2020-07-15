@@ -29,6 +29,8 @@ $(document).ready(function () {
       $(".Fatality").css({ filter: "hue-rotate(0deg)" });
     }, 2000);
   });
+
+  $("body").toasty();
 });
 
 function playFatal(url) {
@@ -36,7 +38,26 @@ function playFatal(url) {
   sound.play();
   sound.volume = 0.3;
   $("#Fatal").toggle(150);
+  document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
   setTimeout(function () {
     $("#Fatal").toggle(150);
+    document.body.style.backgroundImage = "url('./assets/wp.svg')";
   }, 2000);
 }
+
+function playToasty(url) {
+  var sound = new Audio(url);
+  sound.play();
+  sound.volume = 0.3;
+  $("#toastyMe").addClass("surprise");
+  setTimeout(function () {
+    $("#toastyMe").removeClass("surprise");
+  }, 1000);
+}
+  function Toasty() {
+      $("body").append('<div id="toastyMe"><img src="./assets/toasty.png" alt="toasty"></div>');
+      $("#toastyMe").css({"position": "fixed", "right": "-200px", "bottom": "-10px"});
+  };
+  $.fn.toasty = function () {
+    new Toasty();
+  };

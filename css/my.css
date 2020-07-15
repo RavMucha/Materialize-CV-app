@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   filter: saturate(120%);
+  background-color: #0990ab;
 }
 
 body {
@@ -61,7 +62,7 @@ body {
 }
 
 .avp li::before {
-  content: "♦  ";
+  content: "⊹  ";
   color: #485e68;
 }
 
@@ -83,7 +84,11 @@ footer {
   color: #485e68;
 }
 
-@media only screen and (max-width: 420px) {
+.txt-justify {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 430px) {
   .right {
     float: left !important;
   }
@@ -101,14 +106,14 @@ footer {
   z-index: 99;
 }
 
-.show-dan {
-  -webkit-animation: showToastyGuy 1s;
-  -moz-animation: showToastyGuy 1s;
-  -o-animation: showToastyGuy 1s;
-  animation: showToastyGuy 1s;
+.surprise {
+  -webkit-animation: showMe 1s;
+  -moz-animation: showMe 1s;
+  -o-animation: showMe 1s;
+  animation: showMe 1s;
 }
 
-@-webkit-keyframes showToastyGuy {
+@-webkit-keyframes showMe {
   0% {
     right: -300px;
   }
@@ -123,7 +128,7 @@ footer {
   }
 }
 
-@-moz-keyframes showToastyGuy {
+@-moz-keyframes showMe {
   0% {
     right: -300px;
   }
@@ -138,7 +143,7 @@ footer {
   }
 }
 
-@-o-keyframes showToastyGuy {
+@-o-keyframes showMe {
   0% {
     right: -300px;
   }
@@ -153,7 +158,7 @@ footer {
   }
 }
 
-@keyframes showToastyGuy {
+@keyframes showMe {
   0% {
     right: -300px;
   }
