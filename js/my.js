@@ -41,6 +41,10 @@ function playFatal() {
 function playToasty() {
   soundT.play();
   soundT.volume = 0.3;
+  $("#About").addClass("abt");
+  $('#About').click(function(){
+    Materialize.toast('The magic textbox keyword is:&nbsp;<b>FATALITY</b>', 1500, 'tost');
+  });
   $("#toastyMe").addClass("surprise");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
@@ -67,6 +71,4 @@ $(function() {
   });
 });
 
-$('#About').click(function(){
-  Materialize.toast('The magic keyword is:&nbsp;<b>FATALITY</b>', 1500, 'tost');
-});
+
