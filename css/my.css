@@ -193,3 +193,7 @@ footer {
 .tost b {
   color: #ee6e73;
 }
+
+#About:hover, #Copy:hover {
+  text-shadow: 0 0 2px #ee6e73;
+}
