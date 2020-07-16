@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".tap-target").tapTarget("open");
   setTimeout(function () {
     $(".tap-target").tapTarget("close");
-  }, 4000);
+  }, 3500);
 
   $(".collapsible").collapsible({
     onOpen: function (el) {
@@ -65,4 +65,8 @@ $(function() {
         $("#textarea1").val("");
       }
   });
+});
+
+$('#About').click(function(){
+  Materialize.toast('The magic keyword is &nbsp;<b>FATALITY</b>', 1500, 'tost');
 });

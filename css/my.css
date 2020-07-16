@@ -92,6 +92,7 @@ footer {
   .right {
     float: left !important;
   }
+
   #toasty-button {
     float: left;
     margin-right: 10px;
@@ -117,12 +118,15 @@ footer {
   0% {
     right: -300px;
   }
+
   40% {
     right: 0;
   }
+
   60% {
     right: 0;
   }
+
   100% {
     right: -300px;
   }
@@ -132,12 +136,15 @@ footer {
   0% {
     right: -300px;
   }
+
   40% {
     right: 0;
   }
+
   60% {
     right: 0;
   }
+
   100% {
     right: -300px;
   }
@@ -147,12 +154,15 @@ footer {
   0% {
     right: -300px;
   }
+
   40% {
     right: 0;
   }
+
   60% {
     right: 0;
   }
+
   100% {
     right: -300px;
   }
@@ -162,13 +172,24 @@ footer {
   0% {
     right: -300px;
   }
+
   40% {
     right: 0;
   }
+
   60% {
     right: 0;
   }
+
   100% {
     right: -300px;
   }
+}
+
+.tost {
+  background-color: #38494c;
+}
+
+.tost b {
+  color: #cc2908;
 }
