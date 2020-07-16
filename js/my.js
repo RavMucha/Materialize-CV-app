@@ -55,3 +55,13 @@ function Toasty() {
 $.fn.toasty = function () {
   new Toasty();
 };
+
+$(function() {
+  $("#textarea1").keyup(function() {
+      var msg = $("#textarea1").val().includes("fatality", 0);
+      if(msg == true) {
+        playFatal();
+        $("#textarea1").val("");
+      }
+  });
+});
