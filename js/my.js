@@ -43,11 +43,12 @@ function playToasty() {
   soundT.play();
   soundT.volume = 0.3;
   console.log("%c EE#2 unlocked! Check the 'About me' section for clues...", "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;");
-  $("#About").addClass("abt");
+  if (!$('#About').hasClass("abt")) {
+  $('#About').addClass("abt");
   $('#About').click(function(){
     Materialize.toast('The magic textbox keyword is:&nbsp;<b>FATALITY</b>', 1500, 'tost');
     console.log("%c EE#3 trigger is 'Fatality'; type it in the textarea...", "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;");
-  });
+  })};
   $("#toastyMe").addClass("surprise");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
