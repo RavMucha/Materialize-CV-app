@@ -28,19 +28,18 @@ $(document).ready(function () {
 });
 var soundF = new Audio("./assets/Fatal.mp3");
 var soundT = new Audio("./assets/Toasty.mp3");
-var EE_TOASTY = true;
-var EE_ABOUT = false;
+var EE_T_A = true;
 var EE_FATAL = false;
 
 $(".copy").click(function () {
-  if (EE_TOASTY == true) {
+  if (EE_T_A == true && EE_FATAL == false) {
     $(".Fatality").css({
       filter: "hue-rotate(0deg)",
     });
     document.body.style.backgroundImage = "url('./assets/wp.svg')";
-    EE_ABOUT = true;
+    EE_T_A = false;
+    EE_FATAL = true;
     playToasty();
-    EE_TOASTY = false;
   }
 });
 
@@ -52,20 +51,16 @@ function playToasty() {
     "%c EE#2 unlocked! Check the 'About me' section for clues...",
     "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;"
   );
-  if (!$("#About").hasClass("abt") && EE_ABOUT == true && EE_FATAL == false) {
+  if (EE_T_A == false && EE_FATAL == true) {
     $("#About").addClass("abt");
     $("#About").click(function () {
-      if (
-        $("#About").hasClass("abt") &&
-        EE_ABOUT == true &&
-        EE_FATAL == false
-      ) {
+      if (EE_T_A == false && EE_FATAL == true) {
         Materialize.toast(
           "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
           1500,
           "tost"
         );
-        EE_ABOUT = false;
+        EE_T_A = true;
         EE_FATAL = true;
         $("#About").removeClass("abt");
         console.log(
@@ -98,7 +93,6 @@ $.fn.toasty = function () {
 function playFatal() {
   soundF.play();
   soundF.volume = 0.3;
-  EE_FATAL = false;
   $("#Fatal").toggle(150);
   $(".Fatality").css({
     filter: "hue-rotate(180deg)",
@@ -116,12 +110,12 @@ $(function () {
       msg.includes("fatality", 0) ||
       msg.includes("Fatality", 0) ||
       msg.includes("FATALITY", 0);
-    if (check == true && EE_FATAL == true && !$("#Copy").hasClass("copy")) {
+    if (check == true && EE_T_A == true && EE_FATAL == true) {
       playFatal();
       $("#textarea1").val("");
       $("#Copy").addClass("copy");
-      EE_TOASTY = true;
-      EE_ABOUT = false;
+      EE_T_A = true;
+      EE_FATAL = false;
     }
   });
 });
