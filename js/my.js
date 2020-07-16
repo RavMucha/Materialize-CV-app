@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  console.log("%c There's an Easter Egg somewhere down there...", "background: #38494c; color: #ee6e73; padding:5px; border-radius: 3px;");
+  console.log(
+    "%c There's an Easter Egg somewhere down there...",
+    "background: #38494c; color: #ee6e73; padding:5px; border-radius: 3px;"
+  );
   $(".tap-target").tapTarget("open");
   setTimeout(function () {
     $(".tap-target").tapTarget("close");
@@ -30,11 +33,15 @@ function playFatal() {
   soundF.play();
   soundF.volume = 0.3;
   $("#Fatal").toggle(150);
-  $(".Fatality").css({ filter: "hue-rotate(180deg)" });
+  $(".Fatality").css({
+    filter: "hue-rotate(180deg)"
+  });
   document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
   setTimeout(function () {
     $("#Fatal").toggle(150);
-    $(".Fatality").css({ filter: "hue-rotate(0deg)" });
+    $(".Fatality").css({
+      filter: "hue-rotate(0deg)"
+    });
     document.body.style.backgroundImage = "url('./assets/wp.svg')";
   }, 3000);
 }
@@ -42,35 +49,54 @@ function playFatal() {
 function playToasty() {
   soundT.play();
   soundT.volume = 0.3;
-  console.log("%c EE#2 unlocked! Check the 'About me' section for clues...", "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;");
-  if (!$('#About').hasClass("abt")) {
-  $('#About').addClass("abt");
-  $('#About').click(function(){
-    Materialize.toast('The magic textbox keyword is:&nbsp;<b>FATALITY</b>', 1500, 'tost');
-    console.log("%c EE#3 trigger is 'Fatality'; type it in the textarea...", "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;");
-  })};
+  console.log(
+    "%c EE#2 unlocked! Check the 'About me' section for clues...",
+    "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;"
+  );
+  if (!$("#About").hasClass("abt")) {
+    $("#About").addClass("abt");
+    $("#About").click(function () {
+      Materialize.toast(
+        "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
+        1500,
+        "tost"
+      );
+      console.log(
+        "%c EE#3 trigger is 'Fatality'; type it in the textarea...",
+        "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;"
+      );
+    });
+  }
   $("#toastyMe").addClass("surprise");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
   }, 1000);
 }
+
 function Toasty() {
   $("body").append(
     '<div id="toastyMe"><img src="./assets/toasty.png" alt="toasty"></div>'
   );
-  $("#toastyMe").css({ position: "fixed", right: "-200px", bottom: "-10px" });
+  $("#toastyMe").css({
+    position: "fixed",
+    right: "-200px",
+    bottom: "-10px"
+  });
 }
 $.fn.toasty = function () {
   new Toasty();
 };
 
-$(function() {
-  $("#textarea1").keyup(function() {
-      let msg = $("#textarea1").val();
-      let check = msg.includes("fatality", 0) || msg.includes("Fatality", 0) || msg.includes("FATALITY", 0);
-      if(check == true) {
-        playFatal();
-        $("#textarea1").val("");
-      }
+$(function () {
+  $("#textarea1").keyup(function () {
+    let msg = $("#textarea1").val();
+    let check =
+      msg.includes("fatality", 0) ||
+      msg.includes("Fatality", 0) ||
+      msg.includes("FATALITY", 0);
+    if (check == true) {
+      playFatal();
+      $("#textarea1").val("");
+    }
   });
 });
