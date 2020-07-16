@@ -68,5 +68,5 @@ $(function() {
 });
 
 $('#About').click(function(){
-  Materialize.toast('The magic keyword is &nbsp;<b>FATALITY</b>', 1500, 'tost');
+  Materialize.toast('The magic keyword is:&nbsp;<b>FATALITY</b>', 1500, 'tost');
 });
