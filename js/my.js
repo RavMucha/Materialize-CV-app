@@ -28,43 +28,43 @@ $(document).ready(function () {
 });
 var soundF = new Audio("./assets/Fatal.mp3");
 var soundT = new Audio("./assets/Toasty.mp3");
+var EE_TOASTY = true;
+var EE_ABOUT = false;
+var EE_FATAL = false;
 
-function playFatal() {
-  soundF.play();
-  soundF.volume = 0.3;
-  $("#Fatal").toggle(150);
-  $(".Fatality").css({
-    filter: "hue-rotate(180deg)"
-  });
-  document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
-  setTimeout(function () {
-    $("#Fatal").toggle(150);
-    $(".Fatality").css({
-      filter: "hue-rotate(0deg)"
-    });
-    document.body.style.backgroundImage = "url('./assets/wp.svg')";
-  }, 3000);
-}
+$(".copy").click(function () {
+  if (EE_TOASTY == true) {
+    EE_ABOUT = true;
+    playToasty();
+    EE_TOASTY = false;
+  }
+});
 
 function playToasty() {
   soundT.play();
   soundT.volume = 0.3;
+  $("#Copy").removeClass("copy");
   console.log(
     "%c EE#2 unlocked! Check the 'About me' section for clues...",
     "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;"
   );
-  if (!$("#About").hasClass("abt")) {
+  if (!$("#About").hasClass("abt") && EE_ABOUT == true && EE_FATAL == false) {
     $("#About").addClass("abt");
     $("#About").click(function () {
-      Materialize.toast(
-        "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
-        1500,
-        "tost"
-      );
-      console.log(
-        "%c EE#3 trigger is 'Fatality'; type it in the textarea...",
-        "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;"
-      );
+      if ($("#About").hasClass("abt") && EE_ABOUT == true && EE_FATAL == false) {
+        Materialize.toast(
+          "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
+          1500,
+          "tost"
+        );
+        EE_ABOUT = false;
+        EE_FATAL = true;
+        $("#About").removeClass("abt");
+        console.log(
+          "%c EE#3 trigger is 'Fatality'; type it in the textarea...",
+          "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;"
+        );
+      }
     });
   }
   $("#toastyMe").addClass("surprise");
@@ -80,12 +80,30 @@ function Toasty() {
   $("#toastyMe").css({
     position: "fixed",
     right: "-200px",
-    bottom: "-10px"
+    bottom: "-10px",
   });
 }
 $.fn.toasty = function () {
   new Toasty();
 };
+
+function playFatal() {
+  soundF.play();
+  soundF.volume = 0.3;
+  EE_FATAL = false;
+  $("#Fatal").toggle(150);
+  $(".Fatality").css({
+    filter: "hue-rotate(180deg)",
+  });
+  document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
+  setTimeout(function () {
+    $("#Fatal").toggle(150);
+    $(".Fatality").css({
+      filter: "hue-rotate(0deg)",
+    });
+    document.body.style.backgroundImage = "url('./assets/wp.svg')";
+  }, 3000);
+}
 
 $(function () {
   $("#textarea1").keyup(function () {
@@ -94,9 +112,12 @@ $(function () {
       msg.includes("fatality", 0) ||
       msg.includes("Fatality", 0) ||
       msg.includes("FATALITY", 0);
-    if (check == true) {
+    if (check == true && EE_FATAL == true && !$("#Copy").hasClass("copy")) {
       playFatal();
       $("#textarea1").val("");
+      $("#Copy").addClass("copy");
+      EE_TOASTY = true;
+      EE_ABOUT = false;
     }
   });
 });
