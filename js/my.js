@@ -58,8 +58,9 @@ $.fn.toasty = function () {
 
 $(function() {
   $("#textarea1").keyup(function() {
-      var msg = $("#textarea1").val().includes("fatality", 0);
-      if(msg == true) {
+      let msg = $("#textarea1").val();
+      let check = msg.includes("fatality", 0) || msg.includes("Fatality", 0) || msg.includes("FATALITY", 0);
+      if(check == true) {
         playFatal();
         $("#textarea1").val("");
       }
