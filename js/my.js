@@ -35,7 +35,7 @@ function playFatal() {
     $("#Fatal").toggle(150);
     $(".Fatality").css({ filter: "hue-rotate(0deg)" });
     document.body.style.backgroundImage = "url('./assets/wp.svg')";
-  }, 2000);
+  }, 3000);
 }
 
 function playToasty() {
