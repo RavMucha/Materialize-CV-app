@@ -34,6 +34,10 @@ var EE_FATAL = false;
 
 $(".copy").click(function () {
   if (EE_TOASTY == true) {
+    $(".Fatality").css({
+      filter: "hue-rotate(0deg)",
+    });
+    document.body.style.backgroundImage = "url('./assets/wp.svg')";
     EE_ABOUT = true;
     playToasty();
     EE_TOASTY = false;
@@ -51,7 +55,11 @@ function playToasty() {
   if (!$("#About").hasClass("abt") && EE_ABOUT == true && EE_FATAL == false) {
     $("#About").addClass("abt");
     $("#About").click(function () {
-      if ($("#About").hasClass("abt") && EE_ABOUT == true && EE_FATAL == false) {
+      if (
+        $("#About").hasClass("abt") &&
+        EE_ABOUT == true &&
+        EE_FATAL == false
+      ) {
         Materialize.toast(
           "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
           1500,
@@ -98,10 +106,6 @@ function playFatal() {
   document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
   setTimeout(function () {
     $("#Fatal").toggle(150);
-    $(".Fatality").css({
-      filter: "hue-rotate(0deg)",
-    });
-    document.body.style.backgroundImage = "url('./assets/wp.svg')";
   }, 3000);
 }
 
