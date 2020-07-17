@@ -107,6 +107,12 @@ footer {
   z-index: 99;
 }
 
+#toastyMe {
+  position: fixed;
+  right: -200px;
+  bottom: -10px;
+}
+
 .surprise {
   -webkit-animation: showMe 1s;
   -moz-animation: showMe 1s;
@@ -194,6 +200,7 @@ footer {
   color: #ee6e73;
 }
 
-.abt:hover, .copy:hover {
+.abt:hover,
+.copy:hover {
   text-shadow: 0 0 2px #ee6e73;
 }

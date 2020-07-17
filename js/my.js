@@ -80,11 +80,6 @@ function Toasty() {
   $("body").append(
     '<div id="toastyMe"><img src="./assets/toasty.png" alt="toasty"></div>'
   );
-  $("#toastyMe").css({
-    position: "fixed",
-    right: "-200px",
-    bottom: "-10px",
-  });
 }
 $.fn.toasty = function () {
   new Toasty();
@@ -114,7 +109,8 @@ $(function () {
       playFatal();
       $("#textarea1").val("");
       $("#Copy").addClass("copy");
-console.log(`%c
+      console.log(
+        `%c
 ░░░░░░░░░░░░░░░░▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░
 ░░░░░░░░░░▓▓▓▓▓▓▓░░░░░░▓▓▓▓▓▓░░░░░░░░░░
 ░░░░░░▓▓▓▓░░▒░░▓░░░░░░░░░░░░░▓▓▓▒░░░░░░
@@ -130,7 +126,9 @@ console.log(`%c
 ░░░▓▓▓▓▓░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░▓▓▓░░░
 ░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░▓▓▓░░░░░
 ░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░
-░░░░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░`, "background: #2e2e2e; font-family:monospace; font-weight: bold; color: #C1950E;");
+░░░░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░`,
+        "background: #2e2e2e; font-family:monospace; font-weight: bold; color: #C1950E;"
+      );
       EE_T_A = true;
       EE_FATAL = false;
     }
