@@ -40,7 +40,6 @@ $(".copy").click(function () {
     EE_T_A = false;
     EE_FATAL = true;
     playToasty();
-    $("#toastyMe").hide();
   }
 });
 
@@ -72,8 +71,10 @@ function playToasty() {
     });
   }
   $("#toastyMe").addClass("surprise");
+  $("#toastyMe").css("display", "block");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
+    $("#toastyMe").css("display", "none");
   }, 1000);
 }
 
