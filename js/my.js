@@ -71,10 +71,8 @@ function playToasty() {
     });
   }
   $("#toastyMe").addClass("surprise");
-  $("#toastyMe").css("display", "block");
   setTimeout(function () {
     $("#toastyMe").removeClass("surprise");
-    $("#toastyMe").css("display", "none");
   }, 1000);
 }
 
