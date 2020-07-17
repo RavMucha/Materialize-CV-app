@@ -115,22 +115,22 @@ $(function () {
       $("#textarea1").val("");
       $("#Copy").addClass("copy");
 console.log(`%c
-                  RRRRRr                
-           RRRRRRRR     RRRRRR          
-       RRRR  a  R             RRRa      
-     RRR   RRRRRRRRRRRRR         RRR    
-   RRR R RRRRRRRRRRR   RRRR        RRx  
-  RRR  RRRRRRRRRRRRRRR  RRRRa       RRR 
-  RR  rRRRRRRRR RRR   R    RRRRR     RR 
- RR    RRRRRRRR          RR   R       RR
- RR   RRRRRRRRRRR              R      RR
- RRl    RRRRRRRRRRRRRRRRRRRRRR  R  R RRR
-  RR     RRRRRRRRRRRRRRRRRRRRRRR     RR 
-   RRR   RR RRRRRRRRRRRRRRRRRRRRR   RR  
-    RRRRR        RRRRRRRRRRRRRRR  RRR   
-      RRRRRRRRRRRRRRRRRRRRRRRRR RRR     
-         RRRRRRRRRRRRRRRRRRRRRRR        
-              RRRRRRRRRRRRR             `, "background: #2e2e2e; font-family:monospace; font-weight: bold; color: #C1950E;");
+                 ▓▓▓▓▓▓▓▓               
+           ▓▓▓▓▓▓▓      ▓▓▓▓▓▓          
+       ▓▓▓▓  ░  ▓             ▓▓▓░      
+     ▓▓░   ▓▓▓▓▓▓▓▓▓▓▓▓▓         ▓▓▓    
+   ▓▓▓ ▓ ▓▓▓▓▓▓▓▓▓▓▓   ▓▓▓▓        ▓▓░  
+  ▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓░       ▓▓▓ 
+  ▓▓  ▓▓▓▓▓▓▓▓▓ ▓▓▓   ▓░░  ▓▓▓▓▓     ▓▓ 
+ ▓▓    ▓▓▓▓▓▓▓▓          ▓▓   ▓       ▓▓
+ ▓▓   ▓▓▓▓▓▓▓▓▓▓▓              ▓      ▓▓
+ ▓▓     ▓▓▓▓▓▓▓▓▓░▓▓▓▓▓▓▓▓▓▓▓▓  ▓  ▓ ▓▓ 
+  ▓▓     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓  ▓▓ 
+   ▓▓▓   ▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   ▓▓  
+    ▓▓▓▓▓        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓   
+      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓     
+         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓        
+              ▓▓▓▓▓▓▓▓▓▓▓▓▓             `, "background: #2e2e2e; font-family:monospace; font-weight: bold; color: #C1950E;");
       EE_T_A = true;
       EE_FATAL = false;
     }
