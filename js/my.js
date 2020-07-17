@@ -40,6 +40,7 @@ $(".copy").click(function () {
     EE_T_A = false;
     EE_FATAL = true;
     playToasty();
+    $("#toastyMe").hide();
   }
 });
 
