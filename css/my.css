@@ -1,13 +1,25 @@
+:root {
+  --cyan: #0990ab;
+  --pink: #ee6e73;
+  --tuna: #ee464c;
+  --greyish: #485e68;
+  --grey: #38494c;
+  --dark: rgba(0, 0, 0, 0.87);
+}
+
 html {
   scroll-behavior: smooth;
   filter: saturate(120%);
-  background-color: #0990ab;
+  background-color: var(--cyan);
 }
 
 body {
   background-image: url("../assets/wp.svg");
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--greyish);
 }
 
 .space {
@@ -34,20 +46,20 @@ body {
 
 .con-tit {
   font-variant: small-caps;
-  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.87);
+  text-shadow: 1px 0 1px var(--dark);
 }
 
 .FMlogo {
-  color: #ee6e73;
+  color: var(--pink);
   font-weight: 300;
-  text-shadow: 0 0 1px #485e68;
+  text-shadow: 0 0 1px var(--greyish);
   font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     "Helvetica Neue", sans-serif;
 }
 
 .FMlogo:hover {
-  color: #ee464c;
-  text-shadow: 0 0 2px #ee6e73;
+  color: var(--tuna);
+  text-shadow: 0 0 2px var(--pink);
 }
 
 #upArr {
@@ -63,11 +75,11 @@ body {
 
 .avp li::before {
   content: "⊹  ";
-  color: #485e68;
+  color: var(--greyish);
 }
 
 .avp li:hover {
-  color: #485e68;
+  color: var(--greyish);
   font-weight: 300;
 }
 
@@ -81,7 +93,7 @@ footer {
 .cus-bdg {
   font-weight: 500;
   font-size: small;
-  color: #485e68;
+  color: var(--greyish);
 }
 
 .txt-justify {
@@ -193,14 +205,14 @@ footer {
 }
 
 .tost {
-  background-color: #38494c;
+  background-color: var(--grey);
 }
 
 .tost b {
-  color: #ee6e73;
+  color: var(--pink);
 }
 
 .abt:hover,
 .copy:hover {
-  text-shadow: 0 0 2px #ee6e73;
+  text-shadow: 0 0 2px var(--pink);
 }
