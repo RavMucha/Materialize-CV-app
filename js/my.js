@@ -12,15 +12,11 @@ $(document).ready(function () {
     onOpen: function (el) {
       if ($("#showUp").hasClass("active")) {
         $("#upArr").fadeIn(400);
-        $(".cont2").removeClass("m6").addClass("m5");
-        $(".cont3").removeClass("m6").addClass("m7");
       }
     },
     onClose: function (el) {
       if (!$("#showUp").hasClass("active")) {
         $("#upArr").fadeOut(400);
-        $(".cont2").removeClass("m5").addClass("m6");
-        $(".cont3").removeClass("m7").addClass("m6");
       }
     },
   });
@@ -60,13 +56,15 @@ function playToasty() {
           1500,
           "tost"
         );
-        EE_T_A = true;
-        EE_FATAL = true;
-        $("#About").removeClass("abt");
-        console.log(
-          "%c EE#3 trigger is 'Fatality'; type it in the textarea...",
-          "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;"
-        );
+        setTimeout(function () {
+          EE_T_A = true;
+          EE_FATAL = true;
+          $("#About").removeClass("abt");
+          console.log(
+            "%c EE#3 trigger is 'Fatality'; type it in the textarea...",
+            "background: #2c393f; color: #ee1e25; text-shadow: 1px 1px 0 #1d262b; padding:5px; border-radius: 3px;"
+          );
+        }, 500);
       }
     });
   }
