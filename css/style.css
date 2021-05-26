@@ -49,6 +49,15 @@ body {
   text-shadow: 1px 0 1px var(--dark);
 }
 
+.secondary-info {
+  color: #6c757d;
+  border-right: 2px solid #6c757d;
+  border-left: 2px solid #6c757d;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
 .FMlogo {
   color: var(--pink);
   font-weight: 300;
