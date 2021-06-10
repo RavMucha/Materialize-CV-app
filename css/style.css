@@ -9,7 +9,6 @@
 
 html {
   scroll-behavior: smooth;
-  filter: saturate(120%);
   background-color: var(--cyan);
 }
 
@@ -96,7 +95,10 @@ body {
 .not-txt,
 .collapsible-header,
 footer {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .cus-bdg {
@@ -136,48 +138,10 @@ footer {
 
 .surprise {
   -webkit-animation: showMe 1s;
-  -moz-animation: showMe 1s;
-  -o-animation: showMe 1s;
   animation: showMe 1s;
 }
 
 @-webkit-keyframes showMe {
-  0% {
-    right: -300px;
-  }
-
-  40% {
-    right: 0;
-  }
-
-  60% {
-    right: 0;
-  }
-
-  100% {
-    right: -300px;
-  }
-}
-
-@-moz-keyframes showMe {
-  0% {
-    right: -300px;
-  }
-
-  40% {
-    right: 0;
-  }
-
-  60% {
-    right: 0;
-  }
-
-  100% {
-    right: -300px;
-  }
-}
-
-@-o-keyframes showMe {
   0% {
     right: -300px;
   }
