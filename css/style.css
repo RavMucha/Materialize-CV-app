@@ -82,7 +82,7 @@ body {
 }
 
 .avp li::before {
-  content: "⊹  ";
+  content: "⋊  ";
   color: var(--greyish);
 }
 
