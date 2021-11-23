@@ -19,9 +19,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: var(--greyish);
-}z
-
-.space {
+}
+z .space {
   letter-spacing: 1px;
 }
 
@@ -41,6 +40,13 @@ body {
   left: 0;
   z-index: 5;
   opacity: 0.9;
+}
+
+.link-section li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 .con-tit {
@@ -96,9 +102,9 @@ body {
 .collapsible-header,
 footer {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cus-bdg {
