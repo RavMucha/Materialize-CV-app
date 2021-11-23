@@ -15,7 +15,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="15s"
+                          dur="13s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -29,7 +29,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -43,7 +43,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="3s"
+                          dur="13s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -57,7 +57,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -71,7 +71,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -85,7 +85,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -99,7 +99,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="6s"
+                          dur="16s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -113,7 +113,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -127,7 +127,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -141,7 +141,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="6s"
+                          dur="16s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -155,7 +155,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -169,7 +169,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -184,7 +184,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="3s"
+                          dur="13s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -198,7 +198,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -212,7 +212,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -226,7 +226,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -240,7 +240,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="3s"
+                          dur="13s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -254,7 +254,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -268,7 +268,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -285,7 +285,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -299,7 +299,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="6s"
+                          dur="16s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -313,7 +313,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="7s"
+                          dur="17s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -327,7 +327,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="3s"
+                          dur="13s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -341,7 +341,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="4s"
+                          dur="14s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -355,7 +355,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="5s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
@@ -369,7 +369,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="6s"
+                          dur="16s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
