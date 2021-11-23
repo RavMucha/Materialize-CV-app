@@ -15,7 +15,7 @@
 	<animateTransform attributeName="transform"
                           attributeType="XML"
                           type="translate"
-                          dur="3s"
+                          dur="15s"
                           values="0,-900;0,900;"
                           repeatCount="indefinite"/>
 </path>
