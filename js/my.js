@@ -21,6 +21,12 @@ $(document).ready(function () {
     },
   });
   $("body").toasty();
+  if (sessionStorage.getItem("fatality") === "true") {
+    $(".Fatality").css({
+      filter: "hue-rotate(180deg)",
+    });
+    document.body.style.backgroundImage = "url('./assets/wpFatal.svg')";
+  }
 });
 var soundF = new Audio("./assets/Fatal.mp3");
 var soundT = new Audio("./assets/Toasty.mp3");
@@ -43,6 +49,7 @@ function playToasty() {
   soundT.play();
   soundT.volume = 0.3;
   $("#Copy").removeClass("copy");
+  sessionStorage.clear();
   console.log(
     "%c EE#2 unlocked! Check the 'About me' section for clues...",
     "background: #2f3e41; color: #ee464c; padding:5px; border-radius: 3px;"
@@ -53,7 +60,7 @@ function playToasty() {
       if (EE_T_A == false && EE_FATAL == true) {
         Materialize.toast(
           "The magic textbox keyword is:&nbsp;<b>FATALITY</b>",
-          1500,
+          2000,
           "tost"
         );
         setTimeout(function () {
@@ -104,6 +111,7 @@ $(function () {
       msg.includes("Fatality", 0) ||
       msg.includes("FATALITY", 0);
     if (check == true && EE_T_A == true && EE_FATAL == true) {
+      sessionStorage.setItem("fatality", "true");
       playFatal();
       $("#textarea1").val("");
       $("#Copy").addClass("copy");
