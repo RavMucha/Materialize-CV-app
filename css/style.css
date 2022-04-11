@@ -24,13 +24,17 @@ body {
   letter-spacing: 1px;
 }
 
-.card-image,
-.card-image img {
+.background-img,
+.background-img img {
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.background-img img {
+  opacity: 0.45;
 }
 
 .soc {
