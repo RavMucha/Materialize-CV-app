@@ -37,6 +37,17 @@ body {
   opacity: 0.45;
 }
 
+.opacity-9.opacity-9 {
+  opacity: 0.95;
+}
+.captcha-row.captcha-row {
+  margin-bottom: 0;
+}
+.captcha-row.captcha-row .col {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
 .soc {
   transform: scale(1);
   transition-duration: 300ms;
