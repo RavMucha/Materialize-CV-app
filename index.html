@@ -62,7 +62,8 @@
         </div>
         <div class="card-content">
           <div class="row">
-            <form class="col s12" id="contact-form" name="contact-form" netlify>
+            <form class="col s12" id="contact-form" name="contact-form" onSubmit="submit" data-netlify-recaptcha="true"
+              netlify>
               <input type="submit" id="submit-form" style="display: none">
               <div class="row">
                 <div class="input-field col s6 m12 l6">
@@ -94,6 +95,11 @@
                   <textarea id="textarea1" type="text" name="message"
                     class="form-control materialize-textarea"></textarea>
                   <label for="textarea1">Your message</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <div id="captcha" data-netlify-recaptcha="true"></div>
                 </div>
               </div>
             </form>
